@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState, type FormEvent } from "react";
 import { toast } from "sonner";
 import { Toaster } from "@/components/ui/sonner";
-// Image yahan se load hogi
+// Image yahan se load hogi, check kar lena src/assets me kk-logo.jpg ho
 import kkLogo from "@/assets/kk-logo.jpg";
 
 export const Route = createFileRoute("/")({
@@ -42,7 +42,7 @@ function LoginPage() {
     }
     setLoading(true);
     
-    // 🔥 Jab Firebase connect karna ho, in lines ka comment hata dena:
+    // 🔥 Firebase connection code (jab connect karo tab iska comment hata lena):
     // import { db } from "@/firebase";
     // import { addDoc, collection, serverTimestamp } from "firebase/firestore";
     // await addDoc(collection(db, "players"), {
@@ -51,7 +51,7 @@ function LoginPage() {
     //   createdAt: serverTimestamp(),
     // });
     
-    await new Promise((r) => setTimeout(r, 600)); // Fake delay for animation
+    await new Promise((r) => setTimeout(r, 600)); // Fake animation delay
     setLoading(false);
     toast.success(`Welcome, ${ffName}!`, { description: "K_K PLAYGROUND" });
   }
@@ -151,4 +151,3 @@ function LoginPage() {
     </main>
   );
 }
-
