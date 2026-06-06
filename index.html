@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Adept Play - Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-900 text-white select-none h-screen overflow-hidden font-sans">
+
+    <div class="max-w-md mx-auto bg-gray-900 h-full flex flex-col relative shadow-2xl">
+        
+        <header class="bg-gray-800 p-4 flex justify-between items-center shadow-md z-10">
+            <h1 class="text-xl font-bold text-green-500">ADEPT <span class="text-white">PLAY</span></h1>
+            <div class="bg-gray-700 px-3 py-1 rounded-full flex items-center gap-2 border border-gray-600">
+                <i class="fa-solid fa-wallet text-green-400"></i>
+                <span class="font-bold">₹150</span>
+            </div>
+        </header>
+
+        <main class="flex-1 overflow-y-auto p-4 pb-20">
+            <h2 class="text-lg font-bold mb-4 text-gray-300">Upcoming Tournaments</h2>
+
+            <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg border border-gray-700 mb-4">
+                <div class="p-4">
+                    <div class="flex justify-between items-start mb-2">
+                        <div>
+                            <h3 class="font-bold text-lg">Free Fire Clash Squad</h3>
+                            <p class="text-xs text-gray-400"><i class="fa-solid fa-clock text-blue-400"></i> Today, 8:00 PM</p>
+                        </div>
+                        <span class="bg-blue-500/20 text-blue-400 text-xs px-2 py-1 rounded font-bold">SQUAD</span>
+                    </div>
+                    
+                    <div class="grid grid-cols-2 gap-4 mt-4 bg-gray-900 p-3 rounded-lg border border-gray-700">
+                        <div class="text-center">
+                            <p class="text-xs text-gray-400">Entry Fee</p>
+                            <p class="font-bold text-green-400">₹20</p>
+                        </div>
+                        <div class="text-center border-l border-gray-700">
+                            <p class="text-xs text-gray-400">Prize Pool</p>
+                            <p class="font-bold text-yellow-400">₹1,000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-4 pb-4">
+                    <div class="flex justify-between text-xs text-gray-400 mb-1">
+                        <span>Spots: 24/48</span>
+                        <span>50% Full</span>
+                    </div>
+                    <div class="w-full bg-gray-700 rounded-full h-1.5 mb-4">
+                        <div class="bg-green-500 h-1.5 rounded-full" style="width: 50%"></div>
+                    </div>
+                    <button onclick="joinTournament(this)" class="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-2.5 rounded-lg transition shadow-md">Join Now</button>
+                </div>
+            </div>
+
+            <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg border border-gray-700 mb-4">
+                 <div class="p-4">
+                    <div class="flex justify-between items-start mb-2">
+                        <div>
+                            <h3 class="font-bold text-lg">BGMi Solo Match</h3>
+                            <p class="text-xs text-gray-400"><i class="fa-solid fa-clock text-blue-400"></i> Tomorrow, 2:00 PM</p>
+                        </div>
+                        <span class="bg-red-500/20 text-red-400 text-xs px-2 py-1 rounded font-bold">SOLO</span>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4 mt-4 bg-gray-900 p-3 rounded-lg border border-gray-700">
+                        <div class="text-center">
+                            <p class="text-xs text-gray-400">Entry Fee</p>
+                            <p class="font-bold text-green-400">₹10</p>
+                        </div>
+                        <div class="text-center border-l border-gray-700">
+                            <p class="text-xs text-gray-400">Per Kill</p>
+                            <p class="font-bold text-yellow-400">₹5</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-4 pb-4">
+                    <button onclick="joinTournament(this)" class="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-2.5 rounded-lg transition shadow-md">Join Now</button>
+                </div>
+            </div>
+        </main>
+
+        <nav class="bg-gray-800 border-t border-gray-700 absolute bottom-0 w-full z-10 flex justify-around p-3 pb-safe">
+            <a href="index.html" class="flex flex-col items-center text-green-500">
+                <i class="fa-solid fa-house text-xl mb-1"></i>
+                <span class="text-[10px]">Home</span>
+            </a>
+            <a href="my_tournaments.html" class="flex flex-col items-center text-gray-400 hover:text-green-500 transition">
+                <i class="fa-solid fa-gamepad text-xl mb-1"></i>
+                <span class="text-[10px]">My Matches</span>
+            </a>
+            <a href="wallet.html" class="flex flex-col items-center text-gray-400 hover:text-green-500 transition">
+                <i class="fa-solid fa-wallet text-xl mb-1"></i>
+                <span class="text-[10px]">Wallet</span>
+            </a>
+            <a href="profile.html" class="flex flex-col items-center text-gray-400 hover:text-green-500 transition">
+                <i class="fa-solid fa-user text-xl mb-1"></i>
+                <span class="text-[10px]">Profile</span>
+            </a>
+        </nav>
+
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
